@@ -11,7 +11,7 @@
  
 int main(int argc, char *argv[])
 {
-    QCoreApplication::setOrganizationName("QtExamples");
+    QCoreApplication::setOrganizationName("BrincDrones");
     QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
     QCoreApplication::setAttribute(Qt::AA_ShareOpenGLContexts);
     QGuiApplication app(argc, argv);
