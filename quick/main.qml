@@ -85,9 +85,9 @@ Window
                 }
                 var eulers = backend.getTelem()
 
-                statusBar.textDisplayData.yaw = eulers["yaw"].toString().substr(1,5) + "°"
-                statusBar.textDisplayData.pitch = eulers["pitch"].toString().substr(1,5) + "°"  
-                statusBar.textDisplayData.roll = eulers["roll"].toString().substr(1,5) + "°"
+                statusBar.textDisplayData.yaw = eulers["yaw"].toString().substr(0,7) + "°"
+                statusBar.textDisplayData.pitch = eulers["pitch"].toString().substr(0,7) + "°"  
+                statusBar.textDisplayData.roll = eulers["roll"].toString().substr(0,7) + "°"
                 statusBar.textDisplayData.ekusu = eulers["x_body"].toString().substr(1,6) + " m"
                 statusBar.textDisplayData.wai = eulers["y_body"].toString().substr(1,6) + " m"
                 statusBar.textDisplayData.zetto = eulers["z_body"].toString().substr(1,6) + " m"
